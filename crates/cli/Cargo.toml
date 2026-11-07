@@ -1,0 +1,16 @@
+[package]
+name = "vertexslicer-cli"
+version = "1.0.0"
+edition = "2021"
+description = "VertexSlicer: a mixed-layer slicer for the Bambu Lab H2D (command line)"
+license = "MIT"
+
+[[bin]]
+name = "vertexslicer-cli"
+path = "src/main.rs"
+
+[dependencies]
+engine = { path = "../engine" }
+anyhow = "1"
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }

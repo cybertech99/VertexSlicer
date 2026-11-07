@@ -1,0 +1,20 @@
+[package]
+name = "vertexslicer"
+version = "1.0.0"
+edition = "2021"
+description = "VertexSlicer: a mixed-layer slicer for the Bambu Lab H2D (desktop app)"
+license = "MIT"
+
+[[bin]]
+name = "vertexslicer"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.37.0", default-features = false, features = ["glow", "default_fonts", "wayland", "x11"] }
+engine = { path = "../engine" }
+glam = "0.34.2"
+anyhow = "1"
+image = { version = "0.25", default-features = false, features = ["png"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.17.2"

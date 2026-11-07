@@ -1,0 +1,7 @@
+* text=auto
+# G-code templates and Studio settings are embedded in the build; keep their bytes exact
+*.gcode text eol=lf
+*.config text eol=lf
+*.3mf binary
+*.stl binary
+*.png binary

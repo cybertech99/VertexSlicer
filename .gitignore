@@ -1,0 +1,5 @@
+/target/
+/graphify-out/
+# test slices written to the repo root (profiles/ templates are needed by the build)
+/*.gcode
+/*.gcode.3mf
